@@ -4,6 +4,7 @@
 # DOMAIN: 1
 # DOMAIN-SUFFIX: 2
 # TOTAL: 3
+PROCESS-NAME,claude
 DOMAIN,cdn.usefathom.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
