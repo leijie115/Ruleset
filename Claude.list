@@ -12,3 +12,15 @@ DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claudemcpclient.com
 DOMAIN-SUFFIX,claudeusercontent.com
+
+
+DOMAIN-KEYWORD,ai-cloud
+DOMAIN-SUFFIX,ai-cloud.com
+DOMAIN-KEYWORD,anthropic
+DOMAIN-KEYWORD,claude
+
+
+# 登录所需的Slack服务
+DOMAIN-SUFFIX,slack-imgs.com
+DOMAIN-SUFFIX,slack.com
+DOMAIN-SUFFIX,slack-edge.com
