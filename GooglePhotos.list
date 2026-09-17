@@ -1,0 +1,24 @@
+# NAME: GooglePhotos
+# 谷歌相册：网页 / App 接口 / 照片与视频 CDN / 分享链接
+# 说明：googleusercontent.com 是整个 Google 的用户内容 CDN（相册照片、Gmail 附件、头像、Drive 预览），
+#       相册照片本体全部走它，因此一并归入，避免被其他规则（如 Gemini）截走。
+# UPDATED: 2026-09-17
+
+# 相册主体
+DOMAIN-SUFFIX,photos.google.com
+DOMAIN-SUFFIX,photos.googleapis.com
+DOMAIN-SUFFIX,photoslibrary.googleapis.com
+DOMAIN-SUFFIX,photosdata-pa.googleapis.com
+DOMAIN-SUFFIX,photospicker.googleapis.com
+DOMAIN-SUFFIX,photos-ug.googleapis.com
+DOMAIN-SUFFIX,photosuploader-pa.googleapis.com
+
+# 照片 / 视频 内容 CDN
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,usercontent.google.com
+DOMAIN-SUFFIX,photos.fife.usercontent.google.com
+DOMAIN-SUFFIX,video.google.com
+DOMAIN-SUFFIX,ggpht.com
+
+# 分享短链
+DOMAIN-SUFFIX,photos.app.goo.gl
