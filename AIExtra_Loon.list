@@ -1,4 +1,4 @@
-# NAME: AIExtra
+# NAME: AIExtra_Loon
 # 说明: 补充上游 AI 规则集遗漏或错分的域名，需排在 Github / Microsoft 等上游规则之前
 # UPDATED: 2026-09-18
 

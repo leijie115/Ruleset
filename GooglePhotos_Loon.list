@@ -1,0 +1,29 @@
+# NAME: GooglePhotos_Loon
+# 说明: Loon 专用。同仓库的 GooglePhotos.list 是 OpenClash 在用的，请勿混用。
+#       本文件在其基础上补充了相册备份的上传端点。
+#       googleusercontent.com 是整个 Google 的用户内容 CDN（相册照片、Gmail 附件、头像、Drive 预览），
+#       相册照片本体全部走它，因此一并归入；在 Loon 配置里这几类同样走公司线路，不冲突。
+#       使用时必须排在上游 Google.list 之前，否则会被它的 DOMAIN-KEYWORD,google 截走。
+# UPDATED: 2026-09-18
+
+# 相册主体
+DOMAIN-SUFFIX,photos.google.com
+DOMAIN-SUFFIX,photos.googleapis.com
+DOMAIN-SUFFIX,photoslibrary.googleapis.com
+DOMAIN-SUFFIX,photosdata-pa.googleapis.com
+DOMAIN-SUFFIX,photospicker.googleapis.com
+
+# 备份上传端点
+DOMAIN-SUFFIX,photos-ug.googleapis.com
+DOMAIN-SUFFIX,photosuploader-pa.googleapis.com
+DOMAIN-SUFFIX,uploads.googleapis.com
+
+# 照片 / 视频 内容 CDN
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,usercontent.google.com
+DOMAIN-SUFFIX,photos.fife.usercontent.google.com
+DOMAIN-SUFFIX,video.google.com
+DOMAIN-SUFFIX,ggpht.com
+
+# 分享短链
+DOMAIN-SUFFIX,photos.app.goo.gl
