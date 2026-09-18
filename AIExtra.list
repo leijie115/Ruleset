@@ -14,6 +14,15 @@ DOMAIN-SUFFIX,edgeservices.bing.com
 DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN,copilot-proxy.githubusercontent.com
 
+# Claude 上游遗漏的域名
+# 说明: 本仓库的 Claude.list 是 OpenClash 在用的，包含 PROCESS-NAME 等 Loon 不支持的规则，
+#       所以 Loon 侧不引用它，只在这里补齐上游 AI.list 没有的 Claude 域名。
+#       anthropic.com / claude.ai / claude.com 上游 AI.list 已覆盖，无需重复
+DOMAIN-SUFFIX,clau.de
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,ai-cloud.com
+
 # ChatGPT 内容 CDN
 # Repcz 的 AI.list 未收录
 DOMAIN-SUFFIX,oaiusercontent.com
