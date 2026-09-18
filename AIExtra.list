@@ -1,0 +1,19 @@
+# NAME: AIExtra
+# 说明: 补充上游 AI 规则集遗漏或错分的域名，需排在 Github / Microsoft 等上游规则之前
+# UPDATED: 2026-09-18
+
+# Microsoft Copilot
+# 走 microsoft.com 和 bing.com，不单独拎出会跟着微软规则直连
+DOMAIN,copilot.microsoft.com
+DOMAIN,sydney.bing.com
+DOMAIN-SUFFIX,copilot.cloud.microsoft
+DOMAIN-SUFFIX,edgeservices.bing.com
+
+# GitHub Copilot
+# 会被 Github 规则的 DOMAIN-KEYWORD,github 吃掉，必须提前匹配
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN,copilot-proxy.githubusercontent.com
+
+# ChatGPT 内容 CDN
+# Repcz 的 AI.list 未收录
+DOMAIN-SUFFIX,oaiusercontent.com
