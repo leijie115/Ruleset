@@ -1,0 +1,17 @@
+# NAME: AppleAI_Loon
+# Apple Intelligence / Siri / Private Cloud Compute 及其中继（Apple Relay via Cloudflare & Fastly）
+# Loon 用：须排在 Repcz AppleCN.list 之前（它含 guzzoni.apple.com，会被送去国内直连）
+# UPDATED: 2026-10-08
+
+# Siri / Apple Intelligence 服务端
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+
+# Private Cloud Compute 中继
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,apple-relay.akamaized.net
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,cp4.cloudflare.com
