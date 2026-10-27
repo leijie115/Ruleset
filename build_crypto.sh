@@ -1,5 +1,5 @@
 #!/bin/sh
-# 生成 Crypto_Loon.list：MetaCubeX geosite category-cryptocurrency（mihomo 格式，每日同步 v2fly）
+# 生成 Crypto_Loon.list（Loon）和 Crypto.list（OpenClash，classical）：MetaCubeX geosite category-cryptocurrency（mihomo 格式，每日同步 v2fly）
 # 转成 Loon 格式，再并上上游缺的交易所。重新生成：sh build_crypto.sh
 set -e
 cd "$(dirname "$0")"
@@ -24,4 +24,6 @@ for k in $KEYWORD; do echo "DOMAIN-KEYWORD,$k"; done >> "$tmp"
   sort -u "$tmp"
 } > Crypto_Loon.list
 rm -f "$tmp"
-echo "Crypto_Loon.list: $(grep -vc '^#' Crypto_Loon.list) 条"
+# 两边只用到 DOMAIN / DOMAIN-SUFFIX / DOMAIN-KEYWORD，格式通用，内容保持一致
+cp Crypto_Loon.list Crypto.list
+echo "Crypto_Loon.list / Crypto.list: $(grep -vc '^#' Crypto.list) 条"
