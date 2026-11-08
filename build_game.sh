@@ -1,5 +1,5 @@
 #!/bin/sh
-# 生成 OpenClash 用的三个游戏规则集（classical），来源是 MetaCubeX geosite（mihomo 格式，每日同步 v2fly）：
+# 生成三个游戏规则集（OpenClash classical，同时复制一份 _Loon 给 Loon 用），来源是 MetaCubeX geosite（mihomo 格式，每日同步 v2fly）：
 #   GameCN.list  国内游戏 + 国外游戏的国内 CDN / 国服  -> 直连，需排在 GitHub / Microsoft 等规则之前
 #   Switch.list  任天堂 / Switch                       -> 🕹️ Switch，需排在 Game.list 之前
 #   Game.list    国外游戏平台                           -> 🎮 游戏平台
@@ -56,3 +56,5 @@ for d in $GAME_EXTRA_DOMAIN; do echo "DOMAIN,$d"; done >> "$tmp"
 emit Game.list "国外游戏平台（Steam / Epic / EA / 暴雪 / 育碧 / PlayStation / 米哈游国际服 等）" "category-games-!cn" "$tmp"
 
 rm -f "$tmp"
+# 只用到 DOMAIN / DOMAIN-SUFFIX，格式通用，_Loon 与 OpenClash 版内容保持一致
+for n in GameCN Switch Game; do cp "$n.list" "${n}_Loon.list"; done
